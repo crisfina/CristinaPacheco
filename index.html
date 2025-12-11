@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejemplo carrusel Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header class="main-header">
+
+      <div class="header-top-bar">
+          <div class="social-links-header">
+              <a href="https://www.instagram.com/usuario" aria-label="Instagram">IG</a>
+              <a href="https://www.tiktok.com/usuario" aria-label="TikTok">TT</a>
+              </div>
+
+          <div class="promo-message">
+              <p>Envío Gratuito en todos los pedidos superiores a 40€</p>
+          </div>
+
+          <div class="language-selector">
+              <a href="#" class="current-lang">ES</a> | 
+              <a href="#">EN</a>
+          </div>
+      </div>
+
+      <div class="header-main-content">
+
+          <div class="header-logo">
+              <a href="/">
+                  <img src="https://res.cloudinary.com/dft2c6a0h/image/upload/v1765445273/Captura3214_aj56ps.png" alt="Logo Cristina Pacheco">
+              </a>
+          </div>
+
+          <div class="search-bar">
+              <input type="search" placeholder="Buscar productos...">
+              <button type="submit">Buscar</button>
+          </div>
+
+          <div class="header-icons">
+              <a href="#" aria-label="Mi Cuenta">👤</a> <a href="/carrito.html" aria-label="Carrito de Compras">
+                  🛒 
+                  <span class="cart-count">3</span> </a>
+          </div>
+      </div>
+
+      <nav class="main-nav">
+          <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/otras.html">Otras páginas</a></li>
+              <li><a href="/ofertas.html">Ofertas</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main class="container">
+    
+    <aside>
+      <!-- Carrusel-->
+      <div id="carouselArte" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://res.cloudinary.com/dft2c6a0h/image/upload/v1765356310/Chica_con_trenza_w95avi.png" class="d-block w-100" alt="Retrato digital">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Retrato digital</h5>
+              <p>Retratos digitales cuidados para no perder la esencia del retrato clásico.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://res.cloudinary.com/dft2c6a0h/image/upload/v1765356310/Aquiles_m7gqxt.jpg" class="d-block w-100" alt="Dibujo gato carboncillo">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Obras con medios tradicionales</h5>
+              <p>Carboncillo, lápiz, tinta y acrílico entre otros.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://via.placeholder.com/1200x600?text=Ilustracion+Digital" class="d-block w-100" alt="Ilustración digital">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ilustración</h5>
+              <p>Ilustración digital y tradicional.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="secciones">
+      <section class="sobremi">
+        <a href="sobremi.html"> <img src="https://res.cloudinary.com/dft2c6a0h/image/upload/v1765446583/WhatsApp_Image_2025-12-11_at_10.45.34_op8bfk.jpg"  alt="Ilustración digital">
+        </a>
+      </section>
+      <section class="sobremi">
+        <a href="/exposicion.html"> <img src="https://res.cloudinary.com/dft2c6a0h/image/upload/v1765356310/Ilustraci%C3%B3n_sin_t%C3%ADtulo_oufk5l.png"  alt="Ilustración digital">
+        </a>
+      </section>
+    </div>
+  </main>
+
+      <footer class="main-footer">
+
+          <div class="footer-top">
+              <div class="newsletter">
+                  <h3>¡Únete a nuestra comunidad!</h3>
+                  <p>Recibe ofertas exclusivas y novedades.</p>
+                  <form action="#" method="post">
+                      <input type="email" placeholder="Introduce tu email" required>
+                      <button type="submit">Suscribirse</button>
+                  </form>
+              </div>
+
+              <div class="social-links">
+                  <h3>Síguenos</h3>
+                  <a href="#" aria-label="Facebook">FB</a>
+                  <a href="#" aria-label="Instagram">IG</a>
+                  <a href="#" aria-label="Twitter">TW</a>
+                  <a href="#" aria-label="Pinterest">PINT</a>
+              </div>
+            
+          </div>
+
+          <hr>
+
+          <div class="footer-links">
+
+              <div class="footer-column">
+                  <h4>Ayuda y Soporte</h4>
+                  <ul>
+                      <li><a href=".contacto.html">Contacto</a></li>
+                      <li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+                      <li><a href="#">Devoluciones y Cambios</a></li>
+                      <li><a href="#">Envíos y Entregas</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-column">
+                  <h4>Nuestra Empresa</h4>
+                  <ul>
+                      <li><a href="/sobremi.html">Sobre Nosotros</a></li>
+                      <li><a href="/blog.html">Blog</a></li>
+                      <li><a href="#">Mapa del Sitio</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-column">
+                  <h4>Legal</h4>
+                  <ul>
+                      <li><a href="#">Política de Privacidad</a></li>
+                      <li><a href="#">Términos y Condiciones</a></li>
+                      <li><a href="#">Aviso Legal</a></li>
+                      <li><a href="#">Política de Cookies</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-column payment-info">
+                  <h4>Pago Seguro</h4>
+                  <p>Aceptamos:</p>
+                  <div class="payment-icons">
+                      <span>VISA</span>
+                      <span>MasterCard</span>
+                      <span>PayPal</span>
+                  </div>
+                  <div class="trust-seal">
+                      <p>SSL Secure</p>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="footer-bottom">
+              <p>&copy; 2025 Cristina Pacheco Todos los derechos reservados.</p>
+          </div>
+      </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+
+    const myCarousel = document.querySelector('#carouselExample');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 4000, 
+      ride: 'carousel'
+    });
+  </script>
+</body>
+</html>

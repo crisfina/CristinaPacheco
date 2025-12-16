@@ -1,4 +1,3 @@
-
 const myCarousel = document.querySelector('#carouselArte');
 if (myCarousel) {
   new bootstrap.Carousel(myCarousel, {
@@ -7,6 +6,8 @@ if (myCarousel) {
   });
 }
 
+const clasesFondo = ["color1", "color2", "color3", "color4", "color5"];
+const clasesTexto = ["color-letra1", "color-letra2", "color-letra3", "color-letra4", "color-letra5"];
 
 async function loadFragment(id, file) {
   const res = await fetch(file);
@@ -16,8 +17,36 @@ async function loadFragment(id, file) {
   }
   const text = await res.text();
   document.getElementById(id).innerHTML = text;
+
+  // Una vez insertado el fragmento, engancha listeners
+  const botones = document.querySelectorAll("button:not(.no-hover)");
+  const enlaces = document.querySelectorAll("a:not(.no-hover)");
+
+  botones.forEach(boton => {
+    boton.addEventListener("mouseover", () => {
+      // Quita clases anteriores y añade una nueva aleatoria
+      clasesFondo.forEach(c => boton.classList.remove(c));
+      const claseAleatoriaFondo = clasesFondo[Math.floor(Math.random() * clasesFondo.length)];
+      boton.classList.add(claseAleatoriaFondo);
+    });
+    boton.addEventListener("mouseout", () => {
+      clasesFondo.forEach(c => boton.classList.remove(c));
+    });
+  });
+
+  enlaces.forEach(enlace => {
+    enlace.addEventListener("mouseover", () => {
+      console.log("hover en botón del footer");
+
+      clasesTexto.forEach(c => enlace.classList.remove(c));
+      const claseAleatoriaTexto = clasesTexto[Math.floor(Math.random() * clasesTexto.length)];
+      enlace.classList.add(claseAleatoriaTexto);
+    });
+    enlace.addEventListener("mouseout", () => {
+      clasesTexto.forEach(c => enlace.classList.remove(c));
+    });
+  });
 }
 
 loadFragment("header", "header.html");
 loadFragment("footer", "footer.html");
-

@@ -1,8 +1,12 @@
-    const myCarousel = document.querySelector('#carouselArte');
-    const carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 4000, 
-      ride: 'carousel'
-    });
+
+const myCarousel = document.querySelector('#carouselArte');
+if (myCarousel) {
+  new bootstrap.Carousel(myCarousel, {
+    interval: 4000,
+    ride: 'carousel'
+  });
+}
+
 
 async function loadFragment(id, file) {
   const res = await fetch(file);
@@ -11,7 +15,6 @@ async function loadFragment(id, file) {
     return;
   }
   const text = await res.text();
-  console.log("Insertando en", id, "contenido:", text); // Depuración
   document.getElementById(id).innerHTML = text;
 }
 

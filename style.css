@@ -78,14 +78,13 @@ body {
 
 .language-selector a:hover {
   color: #CCCCCC;
-  /* Gris claro al pasar el ratón */
 }
 
 /* 2. CABECERA PRINCIPAL */
 .header-main-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 20px;
 }
 
@@ -252,7 +251,7 @@ main {
   background-color: #444444;
   border: black 2px solid;
   color: white;
-  width: 30%;
+  width: fit-content;
   padding: 10px;
   margin: 10px;
 }
@@ -350,15 +349,21 @@ aside h5 {
 /* Estilos de la Fila Superior (Newsletter y Redes) */
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
+.social-links{
+  display: flex;
+  flex-direction: row;
+}
+
 .newsletter h3 {
   margin-top: 0;
   margin-bottom: 5px;
+  padding: 10px;
 }
 
 .newsletter input[type="email"],

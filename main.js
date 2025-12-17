@@ -18,13 +18,12 @@ async function loadFragment(id, file) {
   const text = await res.text();
   document.getElementById(id).innerHTML = text;
 
-  // Una vez insertado el fragmento, engancha listeners
   const botones = document.querySelectorAll("button:not(.no-hover)");
   const enlaces = document.querySelectorAll("a:not(.no-hover)");
 
   botones.forEach(boton => {
     boton.addEventListener("mouseover", () => {
-      // Quita clases anteriores y añade una nueva aleatoria
+    
       clasesFondo.forEach(c => boton.classList.remove(c));
       const claseAleatoriaFondo = clasesFondo[Math.floor(Math.random() * clasesFondo.length)];
       boton.classList.add(claseAleatoriaFondo);

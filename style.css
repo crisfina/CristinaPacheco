@@ -221,13 +221,29 @@ h1 {
 
 /* MAIN */
 
+
+
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 30px;
   background-image: url(https://res.cloudinary.com/dft2c6a0h/image/upload/v1765535514/Gemini_Generated_Image_grjwpygrjwpygrjw_sah3ee.png);
   background-size: cover;
+}
+
+.columna{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 40px;
+}
+
+.columna p{
+  margin-bottom: 20px;
+}
+
+.columna h1{
+  margin-bottom: 40px;
 }
 
 .contenedor-formulario {
@@ -395,7 +411,7 @@ aside h5 {
   flex-direction: row;
 }
 
-.newsletter h3 {
+.newsletter h5 {
   margin-top: 0;
   margin-bottom: 5px;
   padding: 10px;

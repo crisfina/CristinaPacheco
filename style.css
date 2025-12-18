@@ -47,11 +47,16 @@
 }
 
 
-.color1 { background-color: var(--color-uno) !important; }
-.color2 { background-color: var(--color-dos) !important; }
-.color3 { background-color: var(--color-tres) !important; }
-.color4 { background-color: var(--color-cuatro) !important; }
-.color5 { background-color: var(--color-cinco) !important; }
+.color1 { background-color: var(--color-uno) !important;
+          font-weight: bolder;}
+.color2 { background-color: var(--color-dos) !important;
+          font-weight: bolder;}
+.color3 { background-color: var(--color-tres) !important; 
+          font-weight: bolder;}
+.color4 { background-color: var(--color-cuatro) !important; 
+          font-weight: bolder;}
+.color5 { background-color: var(--color-cinco) !important; 
+          font-weight: bolder;}
 
 .color-letra1 { color: var(--color-uno) !important; }
 .color-letra2 { color: var(--color-dos) !important; }
@@ -104,6 +109,7 @@ body {
 
 .language-selector a:hover {
   color: #CCCCCC;
+   font-weight: bolder;
 }
 
 /* 2. CABECERA PRINCIPAL */
@@ -189,12 +195,6 @@ body {
   transition: background-color 0.3s;
 }
 
-.main-nav ul li a:hover {
-  color: white;
-  background-color: #FF00FF;
-  font-weight: bolder;
-}
-
 nav {
   border: 2px solid black;
   background-color: white;
@@ -212,6 +212,9 @@ nav a {
 
 nav a:hover {
   transform: scale(1.5);
+  color: white;
+  background-color: #FF00FF;
+  font-weight: bolder;
 }
 
 h1 {

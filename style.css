@@ -229,7 +229,9 @@ main {
   padding: 30px;
   background-image: url(https://res.cloudinary.com/dft2c6a0h/image/upload/v1765535514/Gemini_Generated_Image_grjwpygrjwpygrjw_sah3ee.png);
   background-size: cover;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .columna{
@@ -380,6 +382,27 @@ aside h5 {
   transform: scale(1.1);
   filter: none;
 }
+
+.sobremi{
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 769px) {
+  .texto-superpuesto {
+  position: absolute;
+  top: 90%;
+  right: 20px; 
+  transform: translate(0, -50%);
+  color: white;
+  font-size: 2rem; 
+  font-family: "DM Mono", monospace;
+  text-align: right;
+}
+  
+}
+
+
 
 .terminos, .publicidad {
   display: flex;
@@ -555,6 +578,9 @@ hr {
     display: hidden;
   }
 
+  .search-bar{
+    display: none;
+  }
 
   .index {
   display: flex;
@@ -579,6 +605,17 @@ hr {
   box-shadow: black 5px 5px 15px;
   object-fit: cover;
   filter: grayscale(100%);
+  }
+
+  .texto-superpuesto {
+  position: absolute;
+  top: 90%;
+  right: 50%; 
+  transform: translate(50%, -50%);
+  color: white;
+  font-size: 2rem; 
+  font-family: "DM Mono", monospace;
+  text-align: left;
   }
   
   .footer-links {

@@ -39,8 +39,5 @@ export async function loadFragment(id, file) {
   });
 }
 
-loadFragment("header", "header.html");
-loadFragment("footer", "footer.html");
-
 
 export default loadFragment;
